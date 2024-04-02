@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      html {
+        font-size: 62.5%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(275, 100%, 97%);
+        font-family: sans-serif;
+      }
+      .container {
+        background-image: url("assets/images/background-pattern-desktop.svg");
+        height: 40vh;
+        position: relative;
+      }
+      .card {
+        width: 45rem;
+        margin: a;
+        background-color: hsl(0, 0%, 100%);
+        height: 40rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        padding: 3rem;
+      }
+      p {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+        color: hsl(0, 1%, 24%);
+        line-height: 1.8rem;
+        font-weight: 700;
+      }
+      h2 {
+        margin-bottom: 2rem;
+      }
+      .heading {
+        display: flex;
+        align-items: center;
+      }
+      .question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      hr {
+        margin-bottom: 2rem;
+      }
+      .icon {
+        transform: translate(50%, -50%);
+      }
+      .hidden {
+        display: none;
+      }
+      .shown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="container"></article>
+    <div class="card">
+      <div class="heading">
+        <svg
+          class="plus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="41"
+          fill="none"
+          viewBox="0 0 40 41"
+        >
+          <path
+            fill="#AD28EB"
+            d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z"
+          />
+        </svg>
+        <h1>FAQ</h1>
+      </div>
+      <div class="question">
+        <h2>Whats Fontend Mentor, and how will it help me?</h2>
+
+        <svg
+          class="icon plus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="31"
+          fill="none"
+          viewBox="0 0 30 31"
+        >
+          <path
+            fill="#AD28EB"
+            d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+          />
+        </svg>
+      </div>
+      <p class="paragraph hidden">
+        Frontend Mentor offers realistic coding challenges to help developers
+        improve their frontend coding skills with projects in HTML,CSS and
+        JavaScript. it's suitable for all levels and ideal for portfolio
+        building.
+      </p>
+      <hr />
+      <div class="question">
+        <h2>Is Frontend Mentor free?</h2>
+        <svg
+          class="icon plus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="31"
+          fill="none"
+          viewBox="0 0 30 31"
+        >
+          <path
+            fill="#AD28EB"
+            d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+          />
+        </svg>
+      </div>
+      <p class="paragraph hidden">
+        Frontend Mentor offers realistic coding challenges to help developers
+        improve their frontend coding skills with projects in HTML,CSS and
+        JavaScript. it's suitable for all levels and ideal for portfolio
+        building.
+      </p>
+      <hr />
+      <div class="question">
+        <h2>Can I use Frontend Mentor projects in my portfolio?</h2>
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="31"
+          fill="none"
+          viewBox="0 0 30 31"
+        >
+          <path
+            fill="#AD28EB"
+            d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+          />
+        </svg>
+      </div>
+      <p class="paragraph hidden">
+        Frontend Mentor offers realistic coding challenges to help developers
+        improve their frontend coding skills with projects in HTML,CSS and
+        JavaScript. it's suitable for all levels and ideal for portfolio
+        building.
+      </p>
+      <hr />
+      <div class="question">
+        <h2>How can I get help if I'am stuck on a challenge?</h2>
+        <svg
+          class="icon plus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="31"
+          fill="none"
+          viewBox="0 0 30 31"
+        >
+          <path
+            fill="#AD28EB"
+            d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+          />
+        </svg>
+        </div>
+        <p class="paragraph hidden">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML,CSS and
+          JavaScript. it's suitable for all levels and ideal for portfolio
+          building.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
